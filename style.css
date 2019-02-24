@@ -1,0 +1,13 @@
+html, body {
+  margin: 0;
+}
+
+#sketch-holder {
+  z-index: -10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* display: block; */
+  background-color: rgb(242, 242, 242);
+  filter: blur(1px);
+}
