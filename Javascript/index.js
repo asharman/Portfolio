@@ -35,8 +35,14 @@ hideInfo = e => {
 }
 
 let thumbnails = document.querySelectorAll('.thumbnail');
+let moreInfo = document.querySelectorAll('.more-info');
 
 thumbnails.forEach(element => {
+  element.addEventListener('focus', showInfo);
+  element.addEventListener('blur', hideInfo);
+});
+
+moreInfo.forEach(element => {
   element.addEventListener('focus', showInfo);
   element.addEventListener('blur', hideInfo);
 });
