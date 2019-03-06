@@ -22,11 +22,11 @@ html, body {
 
 .links {
   height: 35px;
-  z-index: 10;
   /* background-color: #f2f2f2; */
 }
 
 .link-item {
+  z-index: 10;
   font-size: 16px;
   font-weight: 500;
   margin-left: 12px;
@@ -42,7 +42,7 @@ html, body {
 
 #landing-page {
   position: absolute;
-  z-index: -5;
+  /* z-index: -5; */
   top: 0;
   left:0;
   width: 100%;
@@ -138,6 +138,10 @@ img {
 
 #view-work-arrow:hover {
   cursor: pointer;
+}
+
+#view-work-arrow:focus {
+  outline: none;
 }
 
 /* Projects Page */
