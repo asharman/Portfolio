@@ -272,7 +272,7 @@ img {
 
 #contact-page {
   color: #f2f2f2;
-  background-color: #333333;
+  background-color: #242424;
   position: absolute;
   top: 200vh;
   height: 100vh;
@@ -340,7 +340,11 @@ form textarea {
   background-color: #f2f2f2;
 }
 
-form button {
+.gotcha {
+  display: none;
+}
+
+#submit {
     position: absolute;
     width: 94px;
     height: 35px;
@@ -353,13 +357,13 @@ form button {
     transition: 250ms linear;
   }
   
-  form button:hover {
+  #submit:hover {
     background-color: #f2f2f2;
     color: #333333;
     cursor: pointer;
   }
   
-  form button:focus {
+  #submit:focus {
     outline: solid 1px #f2f2f2;
   }
   
