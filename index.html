@@ -2,14 +2,51 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+
   <script src="./Javascript/p5.min.js"></script>
 </head>
 
 <body>
-  <h1>Title</h1>
-  <div id="sketch-holder"></div>
-  <h1>Footer</h1>
+  <nav>
+    <div class="links flex-row">
+      <a class="link-item" href="http://github.com/asharman" target="blank">Github</a>
+      <a class="link-item" href="https://www.linkedin.com/in/austin-sharman/" target="blank">LinkedIn</a>
+      <a class="link-item" href="#" target="blank">Resume</a>
+    </div>
+  </nav>
+  <div id="landing-page" class="flex-column">
+    <div id="sketch-holder"></div>
+    <img src="./Assets/IMG_1654.JPG" alt="Austin Sharman">
+    <div id="name-header">
+      <h2>Austin Sharman</h2>
+      <h6>I’m a web developer based in Orlando, FL. I have a passion for solving complex problems and collaborating with
+        others.</h6>
+    </div>
+    <button id="view-work">View Work</button>
+    <button id="view-work-arrow"></button>
+  </div>
+  <div id="project-page">
+    <button id="coffee-companion-thumbnail"></button>
+    <button id="taste-tour-thumbnail"></button>
+    <button id="study-hall-thumbnail"></button>
+  </div>
+  <div id="contact-page" class="flex-column">
+    <h2>Contact</h2>
+    <p id="email-me">Email <span id="my-email">hello@austinsharman.com</span></p>
+    <p id="or-fill-out">Or fill out the form below</p>
+    <div id="down-arrow"></div>
+
+    <form class="flex-column">
+      <input type="text" label="name" placeholder="Name">
+      <input type="email" label="email" placeholder="Email">
+      <textarea type="text" label="message" placeholder="Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <!-- <h1>Footer</h1> -->
 
 
   <script src="./Javascript/sketch.js"></script>

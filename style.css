@@ -1,13 +1,278 @@
 html, body {
   margin: 0;
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  height: 100%;
+  width: 100%;
 }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar */
+
+.links {
+  height: 35px;
+  z-index: 10;
+  /* background-color: #f2f2f2; */
+}
+
+.link-item {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 12px;
+  color: #4f4f4f;
+  text-decoration: none;
+}
+
+.link-item:first-child {
+  margin-left: 16px;
+}
+
+/* Landing Page */
+
+#landing-page {
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+}
+
+/* P5 sketch container */
 
 #sketch-holder {
   z-index: -10;
   position: absolute;
+  width: 100%;
+  overflow: hidden;
   top: 0;
   left: 0;
-  /* display: block; */
-  background-color: rgb(242, 242, 242);
+  background-color: #f2f2f2;
   filter: blur(1px);
 }
+
+/* Image */
+
+img {
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  margin: 0 auto;
+  top: 80px;
+  border-radius: 50%;
+}
+
+/* Text under photo */
+
+#name-header {
+  position: absolute;
+  width: 323px;
+  height: 105px;
+  top: 267px;
+}
+
+#name-header h2 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 500;
+  color: #333333;
+}
+
+#name-header h6 {
+  margin: 0;
+  font-weight: 300;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: right;
+  color: #333333;
+}
+
+/* View Work Button */
+
+#view-work {
+  position: absolute;
+  width: 137px;
+  height: 41px;
+  top: 608px;
+  background: none;
+  border: 1px solid #333333;
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+  transition: 250ms linear;
+}
+
+#view-work:hover {
+  background-color: #333333;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+#view-work:focus {
+  outline: solid 1px #333333;
+}
+
+/* Arrow at the bottom of the page */
+
+#view-work-arrow {
+  position: absolute;
+  width: 16px;
+  height: 9px;
+  top: 787px;
+  background: none;
+  background-size: 16px 9px;
+  background-image: url(./Assets/DownArrow.svg);
+  border: none;
+}
+
+#view-work-arrow:hover {
+  cursor: pointer;
+}
+
+/* Projects Page */
+
+#project-page {
+  position: absolute;
+  background-color: #333333;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 100vh;
+  display: grid;
+  grid-gap: 0px;
+  align-content: center;
+  justify-content: center;
+}
+
+/* Thumbnails */
+
+#coffee-companion-thumbnail {
+  width: 375px;
+  height: 270.77px;
+  background-image: url(./Assets/CoffeeCompanionThumbnail.png);
+  background-size: cover;
+  border: none;
+}
+
+#taste-tour-thumbnail {
+  width: 375px;
+  height: 270.77px;
+  background-image: url(./Assets/TasteTourThumbnail.png);
+  background-size: cover;
+  border: none;
+}
+
+#study-hall-thumbnail {
+  width: 375px;
+  height: 270.77px;
+  background-image: url(./Assets/StudyHallThumbnail.png);
+  background-size: cover;
+  border: none;
+}
+
+/* Contact Page */
+
+#contact-page {
+  color: #f2f2f2;
+  background-color: #333333;
+  position: absolute;
+  top: 200vh;
+  height: 100vh;
+  width: 100%;
+}
+
+#contact-page h2 {
+  position: absolute;
+  top: 104px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  font-size: 24px;
+}
+
+#email-me {
+  position: absolute;
+  top: 176px;
+  font-size: 16px;
+  font-weight: 500;
+} 
+
+#my-email {
+  font-weight: bold;
+}
+
+#or-fill-out {
+  position: absolute;
+  top: 242px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+#down-arrow {
+  position: absolute;
+  top: 280px;
+  width: 11px;
+  height: 6px;
+  background-image: url(./Assets/DownArrowWhite.svg);
+  background-size: 11px 6px;
+}
+
+#contact-page form {
+  position: absolute;
+  top: 324px;
+}
+
+form input {
+  margin-bottom: 4px;
+  padding: 2px;
+  width: 250px;
+  height: 16px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+form textarea {
+  font-family: 'Muli', sans-serif;
+  width: 250px;
+  height: 77px;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: auto;
+  padding: 2px;
+  background-color: #f2f2f2;
+}
+
+form button {
+    position: absolute;
+    width: 94px;
+    height: 35px;
+    top: 149px;
+    background: none;
+    border: 1px solid #f2f2f2;
+    font-size: 14px;
+    color: #f2f2f2;
+    font-weight: 300;
+    transition: 250ms linear;
+  }
+  
+  form button:hover {
+    background-color: #f2f2f2;
+    color: #333333;
+    cursor: pointer;
+  }
+  
+  form button:focus {
+    outline: solid 1px #f2f2f2;
+  }
+  

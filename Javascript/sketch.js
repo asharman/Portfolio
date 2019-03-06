@@ -7,11 +7,11 @@ let spritesheet;
 let textures = [];
 
 function preload() {
-  spritesheet = loadImage('leavesimg.png');
+  spritesheet = loadImage('./Assets/leavesimg.png');
 }
 
 function setup() {
-  canvas = createCanvas(windowWidth - 4, windowHeight - 4);
+  canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('sketch-holder');
   gravity = createVector(0, 1);
 
@@ -23,7 +23,7 @@ function setup() {
     }
   }
 
-  for (let i = 0; i < 15; i++) {
+  for (let i = 0; i < 7; i++) {
     let x = random(width);
     let y = random(-200, -500);
     let design = random(textures);
