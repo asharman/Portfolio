@@ -10,5 +10,4 @@ function scrollToProjects(e) {
 
   e.preventDefault();
   window.scrollBy({ top: distanceToTop(projectPage), left: 0, behavior: 'smooth' });
-
 }
