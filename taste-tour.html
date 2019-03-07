@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Austin Sharman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="info.css">
+
+</head>
+
+<body>
+  <a id="back-to-projects" href="./index.html">Back to Projects</a>
+  <div class="flex-column">
+    <h2>Taste Tour</h2>
+    <div class="carousel">
+      <div class="icon">
+        <button id="left-arrow" class="arrow"></button>
+      </div>
+      <div class="photo-items">
+        <div class="photo-item first">
+          <img src="./Assets/projectPhotos/tasteTour1.png" alt="Gathering brew information" />
+        </div>
+        <div class="photo-item second">
+          <img src="./Assets/projectPhotos/tasteTour2.png" alt="Cards that show you how to set up" />
+        </div>
+        <div class="photo-item third">
+          <img src="./Assets/projectPhotos/tasteTour3.png" alt="A timer with instructions on what to do next" />
+        </div>
+      </div>
+      <div class="icon">
+        <button id="right-arrow" class="arrow"></button>
+      </div>
+
+    </div>
+    <p>The site uses a MySQL database with places stored in it. When the user searches for a place it uses their
+      geolocation and plots out a path to the five closest restaurants matching their query. Another teammate and myself
+      worked on the map routing feature from front-end to back-end.</p>
+    <div class="tech-wrapper">
+      <h2>Technology Used:</h2>
+      <ul>
+        <li>Vue.js</li>
+        <li>Node.js</li>
+        <li>Mapbox API</li>
+        <li>MySQL</li>
+        <li>Express</li>
+      </ul>
+    </div>
+    <div class="button-wrapper">
+      <a href="#" target="blank" id="view-live" class="button">View Live</a>
+      <a href="#" target="blank" id="view-github" class="button">View on Github</a>
+    </div>
+  </div>
+  <script src="./Javascript/info.js"></script>
+</body>
+
+</html>
