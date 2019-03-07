@@ -39,10 +39,12 @@ let moreInfo = document.querySelectorAll('.more-info');
 
 thumbnails.forEach(element => {
   element.addEventListener('focusin', showInfo);
+  element.addEventListener('click', showInfo);
   element.addEventListener('focusout', hideInfo);
 });
 
 moreInfo.forEach(element => {
   element.addEventListener('focusin', showInfo);
+  element.addEventListener('click', showInfo);
   element.addEventListener('focusout', hideInfo);
 });
