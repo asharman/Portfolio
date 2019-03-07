@@ -135,6 +135,7 @@ img {
   background-size: 16px 9px;
   background-image: url(./Assets/DownArrow.svg);
   background-repeat: no-repeat;
+  background-position: center;
   border: none;
 }
 
@@ -312,6 +313,7 @@ img {
   background-image: url(./Assets/DownArrowWhite.svg);
   background-size: 11px 6px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 #contact-page form {
