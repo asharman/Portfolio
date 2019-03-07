@@ -38,11 +38,11 @@ let thumbnails = document.querySelectorAll('.thumbnail');
 let moreInfo = document.querySelectorAll('.more-info');
 
 thumbnails.forEach(element => {
-  element.addEventListener('focus', showInfo);
-  element.addEventListener('blur', hideInfo);
+  element.addEventListener('focusin', showInfo);
+  element.addEventListener('focusout', hideInfo);
 });
 
 moreInfo.forEach(element => {
-  element.addEventListener('focus', showInfo);
-  element.addEventListener('blur', hideInfo);
+  element.addEventListener('focusin', showInfo);
+  element.addEventListener('focusout', hideInfo);
 });
