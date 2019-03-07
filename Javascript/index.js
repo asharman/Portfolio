@@ -45,6 +45,5 @@ thumbnails.forEach(element => {
 
 moreInfo.forEach(element => {
   element.addEventListener('focusin', showInfo);
-  element.addEventListener('click', showInfo);
   element.addEventListener('focusout', hideInfo);
 });
