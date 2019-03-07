@@ -1,7 +1,6 @@
 body {
 	margin: 0;
   padding: 0;
-  width: 100%;
   height: 100vh;
   background-color: #333333;
   font-family: 'Muli', sans-serif;
@@ -183,4 +182,25 @@ p {
   background-color: #f2f2f2;
   color: #333333;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 1125px) {
+  .icon {
+    display: none;
+  }
+
+  .carousel {
+    width: 900px;
+  }
+
+  .photo-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .photo-item {
+    position: static;
+  }
 }
